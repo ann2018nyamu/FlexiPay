@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/flexipay_dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="114dp"
+        android:contentDescription="@string/image"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/fastEfficient_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/greeting"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textFontWeight="400"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_enterpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="20sp"
+        android:text="@string/enter_pin"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fastEfficient_tv" />
+
+    <TableLayout
+        android:id="@+id/tblPinPad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_two">
+
+        <TableRow style="@style/keyboard_row">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/number_one"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textFontWeight="600"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:text="@string/number_two"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/number_three"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/number_four"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="@string/number_five"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_six"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/number_six"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:padding="20dp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_seven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/number_seven"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:padding="20dp"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_eight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/number_eight"
+                android:textAllCaps="true"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_nine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/number_nine"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+
+            <ImageView
+                android:id="@+id/pin_pad_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/pin_ok" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_number_zero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@color/flexipay_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/number_zero"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textFontWeight="600"
+                android:textStyle="normal"
+                app:rippleColor="@android:color/transparent" />
+
+            <ImageView
+                android:id="@+id/delete_pin_pad"
+                android:layout_width="0dp"
+                android:contentDescription="@string/image"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_arrow" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/im_one"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toBottomOf="@+id/im_four"
+        app:layout_constraintEnd_toStartOf="@+id/im_four"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/im_four"
+        app:srcCompat="@drawable/pin_indicator" />
+
+    <ImageView
+        android:id="@+id/im_two"
+        android:layout_width="12dp"
+        android:contentDescription="@string/image"
+        android:layout_height="12dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/im_three"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enterpin"
+        app:srcCompat="@drawable/pin_indicator" />
+
+    <ImageView
+        android:id="@+id/im_three"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toBottomOf="@+id/im_two"
+        app:layout_constraintEnd_toStartOf="@+id/im_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/im_four"
+        app:layout_constraintTop_toTopOf="@+id/im_two"
+        app:srcCompat="@drawable/pin_indicator" />
+
+    <ImageView
+        android:id="@+id/im_four"
+        android:layout_width="12dp"
+        android:contentDescription="@string/image"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_three"
+        app:layout_constraintEnd_toStartOf="@+id/im_three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/im_one"
+        app:layout_constraintTop_toTopOf="@+id/im_three"
+        app:srcCompat="@drawable/pin_indicator" />
+
+    <TextView
+        android:id="@+id/tv_forgot_pin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="20sp"
+        android:text="@string/forgot_pin"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textFontWeight="500"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

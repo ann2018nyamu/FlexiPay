@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mobileNumberFragment">
+    <fragment
+        android:id="@+id/mobileNumberFragment"
+        android:name="ekenya.app.flexipay.fragments.MobileNumberFragment"
+        android:label="fragment_mobile_number"
+        tools:layout="@layout/fragment_mobile_number" >
+        <action
+            android:id="@+id/action_mobileNumberFragment_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="ekenya.app.flexipay.fragments.PersonalInfoFragment"
+        android:label="fragment_personal_info"
+        tools:layout="@layout/fragment_personal_info" >
+        <action
+            android:id="@+id/action_personalInfoFragment_to_justOneStepFragment"
+            app:destination="@id/justOneStepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/justOneStepFragment"
+        android:name="ekenya.app.flexipay.fragments.JustOneStepFragment"
+        android:label="JustOneStepFragment" >
+        <action
+            android:id="@+id/action_justOneStepFragment_to_documentPhotoFragment"
+            app:destination="@id/documentPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentPhotoFragment"
+        android:name="ekenya.app.flexipay.fragments.DocumentPhotoFragment"
+        android:label="DocumentPhotoFragment" >
+        <action
+            android:id="@+id/action_documentPhotoFragment_to_verificationCodeFragment"
+            app:destination="@id/verificationCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="ekenya.app.flexipay.fragments.VerificationCodeFragment"
+        android:label="VerificationCodeFragment" >
+        <action
+            android:id="@+id/action_verificationCodeFragment_to_pinFragment"
+            app:destination="@id/pinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinFragment"
+        android:name="ekenya.app.flexipay.fragments.PinFragment"
+        android:label="PinFragment" />
+</navigation>
